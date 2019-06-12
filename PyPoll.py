@@ -13,15 +13,15 @@ unique_candidate = []
 vote_count = []
 vote_percent = []
 
-# Open the CSV using the set path PyPollcsv
+# Open the CSV PyPollcsv
 with open(PyPollcsv, newline="") as csvfile:
 csvreader = csv.reader(csvfile, delimiter=",")
 csv_header = next(csvreader)
 
-# Conduct the ask
+# ask where 
 for row in csvreader:
 
-# Count the total number of votes
+# Count the total number of Votes
 count = count + 1
 
 # Set the candidate names to candidatelist
